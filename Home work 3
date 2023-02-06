@@ -1,0 +1,23 @@
+Last login: Sun Feb  5 20:47:08 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Candices-MacBook-Air:~ candicechuraman$ cd /Users/candicechuraman/Desktop/Bioinformatics\ 3 
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ pwd
+/Users/candicechuraman/Desktop/Bioinformatics 3
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sed '/zoo/d' pandas.txt>> pandas_no_zoo.txt
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ grep "sex" pandas.txt | awk '{print $1,$4,$2}' pandas.txt>> pandas_name_age_sex.txt
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sort pandas.txt>> pandas_alpha.txt
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sort -k5 pandas.txt>> pandas_zooalpha.txt
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sed 's/female/F' | sed 's/male/M/' pandas.txt>> pandas_MF.txt
+sed: 1: "s/female/F": unterminated substitute in regular expression
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ grep -c "female" pandas.txt | grep -cv "October"
+1
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ nl pandas.txt>> pandas_line_numbers.txt
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sed -n '1p;6p;17p' pandas_line_numbers.txt>> pandas_print_numbers.txt
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ grep -in "X" pandas.txt>> pandas_nox.txt
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sort -k5 pandas.txt | awk '{print $1,$5}' | uniq -u pandas.txt>> pandas_location.txt
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sort -nk4 pandas.txt>> pandas_age.txt
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ awk '$4 <=10 {print $1,$4}' pandas_age.txt>> pandas_age_range.txt
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ 
