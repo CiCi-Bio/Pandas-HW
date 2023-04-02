@@ -1,7 +1,7 @@
 #!/bin/bash
 name="Candice's panda's assignment"
 echo $name 
-sed '/zoo/d' pandas.txt>> pandas_no_zoo.txt
+sed 's/Zoo//g' pandas.txt>> pandas_no_zoo.txt
 grep "sex" pandas.txt | awk '{print $1,$4,$2}' pandas.txt>> pandas_name_age_sex.txt
 sort pandas.txt>> pandas_alpha.txt
 sort -k5 pandas.txt>> pandas_zooalpha.txt
