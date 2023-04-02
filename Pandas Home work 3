@@ -6,7 +6,7 @@ For more details, please visit https://support.apple.com/kb/HT208050.
 (base) Candices-MacBook-Air:~ candicechuraman$ cd /Users/candicechuraman/Desktop/Bioinformatics\ 3 
 (base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ pwd
 /Users/candicechuraman/Desktop/Bioinformatics 3
-(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sed '/zoo/d' pandas.txt>> pandas_no_zoo.txt
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sed 's/Zoo//g' pandas.txt>> pandas_no_zoo.txt
 (base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ grep "sex" pandas.txt | awk '{print $1,$4,$2}' pandas.txt>> pandas_name_age_sex.txt
 (base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sort pandas.txt>> pandas_alpha.txt
 (base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sort -k5 pandas.txt>> pandas_zooalpha.txt
