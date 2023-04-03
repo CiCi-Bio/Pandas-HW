@@ -10,7 +10,7 @@ For more details, please visit https://support.apple.com/kb/HT208050.
 (base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ grep "sex" pandas.txt | awk '{print $1,$4,$2}' pandas.txt>> pandas_name_age_sex.txt
 (base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sort pandas.txt>> pandas_alpha.txt
 (base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sort -k5 pandas.txt>> pandas_zooalpha.txt
-(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sed 's/"female"/F' pandas.txt | sed 's/male/M/'>> pandas_MandF.txt
+(base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ sed "s/female/F/" pandas.txt | sed "s/male/M/" >> pandas_MandF.txt
 sed: 1: "s/"female"/F": unterminated substitute in regular expression
 (base) Candices-MacBook-Air:Bioinformatics 3 candicechuraman$ grep -c "female" pandas.txt | grep -cv "October"
 1
